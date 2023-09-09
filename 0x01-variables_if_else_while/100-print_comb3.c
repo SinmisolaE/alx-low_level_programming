@@ -17,8 +17,8 @@ int main(void)
 		{
 			if (!((b == e) && (b > e)))
 			{
-				putchar(b);
-				putchar(e);
+				putchar(b + '0');
+				putchar(e + '0');
 
 				if (!((b == 8) && (e == 9)))
 				{
