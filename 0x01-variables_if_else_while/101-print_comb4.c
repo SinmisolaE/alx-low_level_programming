@@ -20,9 +20,9 @@ int main(void)
 			{
 				if (!((a == b) || (a > b) || (b == c) || (b > c) || (a == c) || (a > c)))
 				{
-					putchar(a);
-					putchar(b);
-					putchar(c);
+					putchar(a + '0');
+					putchar(b + '0');
+					putchar(c + '0');
 
 					if (!((a == 7) && (b == 8) && (c == 9)))
 					{
