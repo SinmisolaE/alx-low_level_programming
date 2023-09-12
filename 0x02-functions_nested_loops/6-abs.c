@@ -3,14 +3,12 @@
 /**
  * _abs - computes absolute value
  *
- * @int: the character to be checked
+ * @j: the character to be checked
  * Return: returns 0
  */
 
-int _abs(int)
+int _abs(int j)
 {
-	int j;
-
 	if (j < 0)
 		return (-1 * j);
 	else
