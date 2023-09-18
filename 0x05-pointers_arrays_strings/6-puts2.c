@@ -8,11 +8,12 @@ void puts2(char *str)
 {
 	int count = 0;
 	int i;
+	char *y = str;
 
-	while (*str != '\0')
+	while (*y != '\0')
 	{
 		count++;
-		str++;
+		y++;
 	}
 	for (i = 0; i < count; i++)
 	{
