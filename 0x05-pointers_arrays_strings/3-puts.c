@@ -9,13 +9,13 @@ void _puts(char *str)
 	int counter = 0;
 	int i;
 
-	while (*s != '\0')
+	while (*str != '\0')
 	{
 		counter++;
-		s++;
+		str++;
 	}
 	for (i = 0; i < counter; i++)
 	{
-		_putchar(s[i]);
+		_putchar(str[i]);
 	}
 }
