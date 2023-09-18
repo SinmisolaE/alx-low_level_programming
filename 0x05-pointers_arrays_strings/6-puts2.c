@@ -9,15 +9,15 @@ void puts2(char *str)
 	int count = 0;
 	int i;
 
-	while (str[count] != '\0')
+	while (*str != '\0')
 	{
 		count++;
 		str++;
 	}
-	for (i = 0; i < count;)
+	for (i = 0; i < count; i++)
 	{
-		_putchar(str[i]);
-		i += 2;
+		if (i % 2 == 0)
+			_putchar(str[0]);
 	}
 	_putchar('\n');
 }
