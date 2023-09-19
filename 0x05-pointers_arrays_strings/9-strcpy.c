@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * *_strcpy - copy
+ * char *_strcpy - copy
  * @dest: first var
  * @src: another var
+ * Return: returns dest
  */
 char *_strcpy(char *dest, char *src)
 {
