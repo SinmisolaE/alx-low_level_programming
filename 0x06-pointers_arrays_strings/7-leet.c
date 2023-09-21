@@ -18,7 +18,6 @@ char *leet(char *s)
 		{
 			if (s[i] == f1[j])
 				s[i] = f2[j];
-			j++;
 		}
 		i++;
 	}
