@@ -17,7 +17,10 @@ char *rot13(char *s)
 		for (j = 0; j < 52; j++)
 		{
 			if (s[i] == f1[j])
+			{
 				s[i] = f2[j];
+				break;
+			}
 		}
 		i++;
 	}
