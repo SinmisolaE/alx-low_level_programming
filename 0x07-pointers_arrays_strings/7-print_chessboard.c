@@ -6,10 +6,6 @@
 void print_chessboard(char (*a)[8])
 {
 	int i, j;
-	int count = 0;
-
-	while (a[count] != '\0')
-		count++;
 
 	for (i = 0; i < count; i++)
 	{
