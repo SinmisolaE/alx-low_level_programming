@@ -28,5 +28,5 @@ int act_sqr_root_recursion(int n, int i)
 		return (-1);
 	else if (i * i == n)
 		return (i);
-	act_sqr_root_recursion(n, i + 1);
+	return (act_sqr_root_recursion(n, i + 1));
 }
