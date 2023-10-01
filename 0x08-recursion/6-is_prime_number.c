@@ -25,7 +25,7 @@ int act_prime_number(int n, int i)
 {
 	if (i == 1)
 		return (1);
-	else if (n % i == 0 && i > 1)
+	else if (n % i == 0)
 		return (0);
 	return (act_prime_number(n, i - 1));
 }
