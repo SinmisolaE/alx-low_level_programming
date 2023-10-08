@@ -15,10 +15,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int count1 = 0;
 	int count2 = 0;
 
-	if  (s1 == NULL)
-		*s1 = "";
-	if (s2 == NULL)
-		*s2 = "";
 
 	while (s1 && s1[count1])
 		count1++;
