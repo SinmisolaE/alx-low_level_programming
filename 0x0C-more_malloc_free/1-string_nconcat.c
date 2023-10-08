@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * string_nconcat - concatenates two strings
  * @s1: first str
@@ -31,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			return (NULL);
 		for (i = 0; i < count1; i++)
 			t[i] = s1[i];
-		for (i = 0; j < count2; j++)
+		for (j = 0; j < count2; j++)
 			t[i + j] = s2[j]
 	}
 	else
