@@ -21,12 +21,18 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	new->len = i;
 	new->str = strdup(str);
+	new->next = NULL;
 
-	while (run_node)
-		run_node = run_node->next;
-
-	run_node = new;
-	run_node->next = NULL;
-
-	return (run_node);
+	if (run_node == NULL)
+	{
+		*head = new;
+		return (*head);
+	}
+	else
+	{
+		while (run_node->next)
+			run_node = run_node->next;
+		run_node->next = new;
+		return (run_node->next);
+	}
 }
