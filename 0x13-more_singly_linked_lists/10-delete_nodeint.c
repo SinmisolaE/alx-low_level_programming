@@ -33,9 +33,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	move = run->next;
 	if (!move)
 		return (-1);
-	else
-	{
-		run->next = move->next;
-		return (1);
-	}
+
+	run->next = move->next;
+	return (1);
+
 }
