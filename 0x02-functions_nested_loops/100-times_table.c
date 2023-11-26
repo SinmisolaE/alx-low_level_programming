@@ -35,8 +35,14 @@ void print_times_table(int n)
 				{
 					_putchar(',');
 					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
+
+					if (j > 9 && j < 100)
+						_putchar(' ');
+					else if (j < 9)
+					{
+						_putchar(' ');
+						_putchar(' ');
+					}
 				}
 				else
 					_putchar('\n');
