@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-	int next, i;
-	int a = 1;
-	int b = 2;
+	long next;
+	long a = 1, b = 2;
+	int i;
 
 	for (i = 0; i < 50; i++)
 	{
 		if (i == 49)
-			printf("%d\n", a);
+			printf("%lu\n", a);
 		else
-			printf("%d, ", a);
+			printf("%lu, ", a);
 		next = a + b;
 		a = b;
 		b = next;
