@@ -12,9 +12,9 @@ int main(void)
 	long next;
 	long sum = 0;
 
-	whlie (a < 4000000)
+	while (a < 4000000)
 	{
-		if (a % 2 ==0)
+		if (a % 2 == 0)
 			sum += a;
 		next = a + b;
 		a = b;
