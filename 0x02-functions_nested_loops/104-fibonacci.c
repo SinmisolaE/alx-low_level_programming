@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i < 98; i++)
 	{
-		if ( i == 97)
+		if (i == 97)
 			printf("%lu\n", a);
 		else
 			printf("%lu, ", a);
