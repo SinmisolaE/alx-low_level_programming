@@ -1,6 +1,13 @@
 #include "lists.h"
 #include <stdlib.h>
 
+/**
+ * insert_dnodeint_at_index - insert node at index
+ * @h: the head of list
+ * @idx: the idx
+ * @n: value of node
+ * Return: addr of node else NULL
+ */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *curr;
