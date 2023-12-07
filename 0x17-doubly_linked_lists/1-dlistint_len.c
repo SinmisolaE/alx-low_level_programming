@@ -1,5 +1,10 @@
 #include "lists.h"
 
+/**
+ * dlistint_len - calc the length of a list
+ * @h: head of list
+ * Return: length
+ */
 size_t dlistint_len(const dlistint_t *h)
 {
 	const dlistint_t *curr;
