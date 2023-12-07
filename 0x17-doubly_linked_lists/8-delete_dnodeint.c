@@ -1,0 +1,35 @@
+#include "lists.h"
+
+/**
+ * delete_dnodeint_at_index - del node at indx
+ * @head: the head of list
+ * @index: the index to del
+ * Return: 1 else -1
+ */
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+{
+	dlistint_t *cur;
+	unsigned int i;
+
+	if (!*head)
+		return (-1);
+	else if  (index == 0)
+	{
+		*head = (*head)->next;
+		return (1);
+	}
+	cur = *head;
+	i = 0;
+	while (cur)
+	{
+		if (i == index)
+		{
+			cur->prev->next = cur->next;
+			cur->next->prev = cur->prev;
+			return (1);
+		}
+		cur = cur->next;
+		i++;
+	}
+	return (-1);
+}
