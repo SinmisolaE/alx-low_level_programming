@@ -13,8 +13,6 @@ void hash_table_delete(hash_table_t *ht)
 	unsigned long int count;
 	hash_table_t *head = ht;
 
-	if (!ht)
-		return;
 
 	count = ht->size;
 
