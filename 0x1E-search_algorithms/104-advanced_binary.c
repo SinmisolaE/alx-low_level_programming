@@ -32,7 +32,7 @@ int binary_adv(int *array, int low, int high, int value)
 {
 	int i, mid;
 
-	if (low > high)
+	if ((low > high) || !array)
 		return (-1);
 
 	printf("Searching in array: ");
