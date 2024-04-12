@@ -14,6 +14,8 @@ int advanced_binary(int *array, size_t size, int value)
 {
 	int low, high;
 
+	if (!array)
+		return (-1);
 	low = 0;
 	high = (int)size - 1;
 
@@ -32,7 +34,7 @@ int binary_adv(int *array, int low, int high, int value)
 {
 	int i, mid;
 
-	if ((low > high) || !array)
+	if (low > high)
 		return (-1);
 
 	printf("Searching in array: ");
