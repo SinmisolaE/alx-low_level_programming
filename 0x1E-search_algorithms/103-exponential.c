@@ -25,13 +25,15 @@ int exponential_search(int *array, size_t size, int value)
 		i *= 2;
 	}
 
-	printf("Value found between indexes [%d] and [%d]\n", i / 2, (i < (int)size - 1 ? i : (int)size - 1));
+	printf("Value found between indexes [%d] and [%d]\n"
+		, i / 2, (i < (int)size - 1 ? i : (int)size - 1));
 
-	return (binary(array, i/2, (i < (int)size - 1 ? i : (int)size - 1), value));
+	return (binary(array, i / 2, (i < (int)size - 1 ? i : (int)size - 1), value));
 }
 
 /**
  * binary - uses binary to complete the search
+ * @array: the sorted array
  * @low: first index
  * @high: last index of array
  * @value: valeu to search for in array
